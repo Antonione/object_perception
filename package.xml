@@ -2,11 +2,32 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>object_perception</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <version>0.0.1</version>
+  <description>Pacote ROS 2 para percepção de objetos usando YOLOv8 e câmera RealSense D435i.</description>
   <maintainer email="antonione@gmail.com">anonione</maintainer>
-  <license>TODO: License declaration</license>
+  <license>BSD</license> <!-- Substitua por uma licença apropriada, se necessário -->
 
+  <!-- Dependências de construção -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependências de compilação -->
+  <build_depend>rclpy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <!-- Dependências de execução -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>torch</exec_depend>
+  <exec_depend>opencv-python</exec_depend>
+  <exec_depend>numpy</exec_depend>
+
+  <!-- Dependências de teste -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
